@@ -1,3 +1,39 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+
+  <ion-menu side="start" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+
+          <ion-item routerLink="/home">
+            <ion-icon slot="start" name="home"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/sobre-mi">
+            <ion-icon slot="start" name="body"></ion-icon>
+            <ion-label>Sobre Mi</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/habilidades">
+            <ion-icon slot="start" name="brush"></ion-icon>
+            <ion-label>Habilidades</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/hobbies">
+            <ion-icon slot="start" name="beer"></ion-icon>
+            <ion-label>Hobbies</ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
